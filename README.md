@@ -8,14 +8,14 @@ The [slides are also available](https://docs.google.com/presentation/d/e/2PACX-1
 ## Installation
 
 This demo requires two additional tools:
-* Elasticsearch. Start it using `docker compose up`.
-* [Ollama](https://ollama.ai/) with the Mistral model. Install Ollama and and run `ollama pull milstral`.
+* [Elasticsearch](https://www.elastic.co/elasticsearch). Start it using `docker compose up`.
+* [Ollama](https://ollama.ai/) with the Mistral model. Install Ollama and and run `ollama pull mistral`.
 
 ## Demos
 
 The first demo indexes the contexts of `data/workplace-documents.json` as vectors in Elasticsearch. Start it by running`./gradlew index-data`.
 
-The second demo is a Q&A command-line interface. Starting by running `./gradlew search-bot -q --console=plain`.
+The second demo is a Q&A command-line interface. Start it by running `./gradlew search-bot -q --console=plain`.
 
 A good question is "What is NASA?". The search bot will anwser explaining the Americas sales regions:
 
